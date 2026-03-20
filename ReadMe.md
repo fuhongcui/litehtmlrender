@@ -1,3 +1,5 @@
+![渲染效果](template_out.png)
+
 ## 描述
 将html css 离屏渲染到 png
 ## 用法
