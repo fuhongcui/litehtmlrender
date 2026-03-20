@@ -1,14 +1,79 @@
-![渲染效果](template_out.png)
 
-## 描述
+## 渲染效果
+![效果](template_out.png)
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>居中文本 + 全屏背景</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      background-image: url('template_src.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .wrapper {
+      display: table;
+      width: 100%;
+      height: 100%;
+    }
+
+    .cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .content {
+      display: inline-block;
+      text-align: center;
+      max-width: 600px;
+      padding: 20px 30px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    p {
+      margin: 0.8em 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper"><div class="cell"><div class="content">
+    <p>English: Hello, World!</p>
+    <p>中文: 你好世界！这是一段中文测试。</p>
+    <p>العربية: مرحبا بالعالم! هذا اختبار للغة العربية.</p>
+    <p>日本語: こんにちは世界！</p>
+    <p>한국어: 안녕하세요 세계!</p>
+    <p>Mixed: Hello 你好 مرحبا こんにちは 안녕하세요</p>
+  </div></div></div>
+</body>
+</html>
+```
+
+## 功能
 将html css 离屏渲染到 png
 
 🤣*Vibe Coding*
-
 ✌️*claude opus YYDS*
+
 ## 用法
-./litehtmlrender <输入html文件> <输出图片> <字体路径>
+```./litehtmlrender <输入html文件> <输出图片> <字体路径>```
 项目根目录有一个实例文件和字体
+
 ## 移植
 - 理论兼容x86 arm
 - 默认编译为静态库
