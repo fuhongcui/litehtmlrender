@@ -2,6 +2,10 @@
 
 ## 描述
 将html css 离屏渲染到 png
+
+🤣*Vibe Coding*
+
+✌️*claude opus YYDS*
 ## 用法
 ./litehtmlrender <输入html文件> <输出图片> <字体路径>
 项目根目录有一个实例文件和字体
